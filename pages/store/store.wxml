@@ -1,2 +1,6 @@
 <!--pages/store/store.wxml-->
+
+<button bindtap='share'>点击分享</button>
+
+
 <text>pages/store/store.wxml</text>
