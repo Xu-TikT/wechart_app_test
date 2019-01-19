@@ -20,7 +20,7 @@ Page({
       }
   },
  share:function(){
-  onShareAppMessage(res)
+  console.log('点击了分享按钮，button需要open-type=\'share\'')
  },
   /**
    * 生命周期函数--监听页面加载
