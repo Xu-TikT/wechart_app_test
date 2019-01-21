@@ -1,8 +1,10 @@
 {
   "pages": [
+    "pages/home/home",
     "pages/index/index",
     "pages/logs/logs",
     "pages/store/store"
+    
   ],
   "tabBar": {
     "list": [
@@ -27,5 +29,5 @@
       "desc": "你的位置信息将用于小程序位置接口的效果展示"
     }
   },
-  "debug":"true"
+  "debug": "true"
 }

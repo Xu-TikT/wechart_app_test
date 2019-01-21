@@ -1,0 +1,9 @@
+<!--pages/home/home.wxml-->
+<swiper class="page-body" indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' circular='{{circular}}' vertical='{{vertical}}' interval="{{interval}}" duration='{{duration}}' previous-margin='{{perviousMargin}}rpx' next-margin='{{nextMargin}}rpx'>
+  <block wx:for="{{imgUrls}}" wx:key="*this">
+    <swiper-item>
+      <image src="{{item}}" mode="scaleToFill" width="500" height="150" />
+    </swiper-item>
+  </block>
+
+</swiper>
