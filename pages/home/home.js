@@ -1,5 +1,7 @@
 // pages/home/home.js
+const app = getApp(); //获取全局app.js
 Page({
+
 
   /**
    * 页面的初始数据
@@ -22,9 +24,18 @@ Page({
 
 
 clickMe(){
-  wx.request({
-    url: '',
-  })
+
+  var data = {
+    where: {
+      recommend: 1
+    },
+    limit: 6,
+  };
+  app.api.goodsList(data, function (res) {
+    page.setData({
+      // recommend: res.data.list
+    });
+  });
 },
 
 
